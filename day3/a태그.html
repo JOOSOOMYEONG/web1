@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a태그</title>
+    <style>
+        #section1 {
+            background-color: rgb(31, 19, 13);
+            height: 1000px;
+            margin-bottom: 100px;
+        }
+
+        #section2 {
+            background-color: rgb(230, 107, 168);
+            height: 1000px;
+            margin-bottom: 100px;
+        }
+
+        section > a {
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="../day2/인라인.html">인라인 태그</a>
+    <!-- 현재 작업 중인 폴더의 상위 폴더에 접근 가능 -->
+    <a href="/">인라인 태그</a>
+    <!-- 모든 파일에 대한 접근 -->
+    <a href="./">인라인 태그</a>
+    <!-- 현재 작업 중인 폴더 안에서 다른 파일 접근 -->
+
+    <hr>
+
+    <section id="section1">
+        <a href="#section2">이곳은 섹션 1이고 클릭하면 섹션 2로 넘어갑니다.</a>
+    </section>
+
+    <section id="section2">
+        <a href="#section1">이곳은 섹션 2이고 클릭하면 섹션 1로 넘어갑니다.</a>
+    </section>
+
+    <a href="mailto:joo2joj@gmail.com">메일 보내기</a>
+    <!-- 메일 보내는 기능 -->
+
+    <a href="tel:01011112222">전화 걸기</a>
+    <!-- 모바일에서 클릭시 키패드로 이동 -->
+
+    <a href="파일 경로" download="파일 제목">~ 다운</a>
+    <!-- pdf 또는 한글 파일 등을 삽입하는 기능 -->
+
+    <a href="https://www.naver.com/" target="_blank">네이버로 이동</a>
+    <!-- target="_blank": 새로은 브라우저로 이동
+         target="_self": 기본값으로 해당 브라우저에서 바로 열기 -->
+</body>
+</html>
