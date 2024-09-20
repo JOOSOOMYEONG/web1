@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼양식 태그</title>
+</head>
+<body>
+    <form action="" method="" autocomplete="" name="">
+        <!-- autocomplete: 자동완성으로 기록이 남게 함 -->
+        <div>
+            <input type="checkbox" value="고양이" checked>고양이
+            <input type="checkbox" value="강아지">강아지
+            <input type="checkbox" value="송아지">송아지
+        </div>
+        <!-- 1개 이상의 선택을 할 때 사용 -->
+        <div>
+            이름: <input type="text" name="이름" maxlength="5" required>
+            읽기전용: <input type="text" readonly>
+        </div>
+        <!-- name: 어떤 것에 대한 정보인지 알려주는 용도 -->
+        <!-- maxlength: 최대 길이 설정 -->
+        <!-- readonly: 입력 불가능 -->
+        <!-- required: 필수 입력란 -->
+        <div>
+            비밀번호: <input type="password" name="비밀번호">
+        </div>
+        <div>
+            나이: <input type="number" autofocus>
+        </div>
+        <!-- autofocus: 시선집중 -->
+        <div>
+            이메일: <input type="email" disabled>
+            </div>
+        <div>
+            <input type="submit">
+        </div>
+        <div>
+            <input type="tel" placeholder="전화번호">
+        </div>
+        <!-- placeholder: 예시 텍스트 -->
+        <div>
+            <input type="radio" value="여성" name="성별">여성
+            <input type="radio" value="남성" name="성별">남성
+        </div>
+        <!-- name으로 그룹화를 하여 하나만 고를 때 사용 -->
+        <div>
+            <input type="date">
+        </div>
+        <div>
+            <input type="button">
+        </div>
+    </form>
+</body>
+</html>

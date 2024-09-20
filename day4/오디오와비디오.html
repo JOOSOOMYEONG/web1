@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오디오와 비디오</title>
+</head>
+
+<body>
+    <audio id="track1" src="https://p.scdn.co/mp3-preview/0ba9d38f5d1ad30f0e31fc8ee80c1bebf0345a0c" controls></audio>
+    <!-- controls는 화면에서 재생하고 음성이 나올 수 있게 하는 박스 (없으면 작동x)
+        autoplay를 통해 재생바 없이 자동으로 바로 나오게 할 수도 있음
+        controls muted: 음소거
+        controls loop: 반복재생-->
+
+    <video src="./9584-220312371_small.mp4" controls poster="./forest-2942477_640.jpg"></video>
+    <!-- controls 위와 같음 
+        poster: 재생하기 전 썸네일-->
+
+    <iframe width="668" height="376" src="https://www.youtube.com/embed/G2n07az18nM" title="농장에 찾아온 주인 없는 강아지"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- 유튜브에서 소스 코드 복사 -->
+
+         <video>
+            <source src="./9584-220312371_small.wedm" type="video/wedm">
+            <source src="./9584-220312371_small.mp4" type="video/mp4"></source>
+            <!-- 둘 중에 지원되는 영상이 표시됨 -->
+         </video>
+</body>
+
+</html>
