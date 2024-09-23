@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>필드그룹 만들기</title>
+</head>
+<body>
+    <form action="">
+        <fieldset disabled name="user">
+            <!-- disabled 부모 요소에 넣을 시 전체가 입력 불가 -->
+            <legend>화원정보</legend>
+            <!-- legand 사용자가 어떤 정보를 입력할지 알려주는 용도. 
+                사용자 접근성에 좋은 태그-->
+            <label for="name">이름 : </label>
+            <input type="text" id="name">
+            <br>
+            <label for="tell">전화번호 : </label>
+            <input type="number" id="tell">
+            <br>
+        </fieldset>
+    </form>
+</body>
+</html>
