@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상클래스 선택자</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box_text {
+            margin: 0;
+            font-size: 50px;
+            font-weight: 900;
+            color: rgb(158, 103, 37);
+        }
+
+        .box:hover > .box_text {
+            color: aquamarine;
+        }
+
+        .box:hover {
+            background-color: rgb(115, 196, 196);
+            transition: 0.5s;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 150px;
+            background-color: pink;
+            text-align: center;
+            line-height: 150px;
+        }
+
+        .box2 > p {
+            font-size: 32px;
+            color: palevioletred;
+        }
+
+        .box2:active {
+            background-color: black;
+        }
+        /* 클릭했을 때 실행됨 */
+
+        .drink > li:nth-child(2) {
+            color: brown;
+        }
+        /* () 안에 even(짝수), odd(홀수)로도 표시 가능*/
+        
+        .drink > li:nth-child(5) {
+            color: rgb(156, 35, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p class="box_text">박스입니다.</p>
+    </div>
+
+    <div class="box2">
+        <p>active 실습</p>
+    </div>
+
+    <ul class="drink">
+        <li>민트초코</li>
+        <li>아메리카노</li>
+        <li>라떼</li>
+        <li>버블티</li>
+        <li>아이스티</li>
+    </ul>
+</body>
+</html>

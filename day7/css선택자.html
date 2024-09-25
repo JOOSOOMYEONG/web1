@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 선택자</title>
+    <style>
+        /* * {
+            color: blues;
+        } */
+        
+        h1 {
+            color: yellow;
+        }
+        
+        #id_section {
+            background-color: bisque;
+        }
+
+        .class_section {
+            background-color: beige;
+        }
+
+        .web_level > li {
+            color: green;
+        }
+        /* 자식의 선택자 */
+
+        .web_level > li > a {
+            text-decoration: none;
+        }
+        /* 자식의 자식 선택자 */
+
+        .web_class_name a {
+            text-decoration: none;
+            background-color: aqua;
+            color: 000;
+        }
+        /* 후손 선태자는 아무 기호 없이 입력 */
+
+        .front_end_leg ~ li {
+            background-color: lavenderblush;
+        }
+
+        .fast_food + li {
+            background-color: rgb(245, 196, 35);
+        }
+        /* 인접요소 */
+        
+        .p_tag, h3, #span_id {
+            background-color: aquamarine;
+        }
+        /* 그룹 선택자 */
+    </style>
+</head>
+<body> 
+   <h1>CSS선택자</h1>
+   <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi nihil at adipisci nisi repellat quod debitis fugiat, error enim perspiciatis doloremque minus, ex cumque maiores officia dicta quibusdam similique doloribus.
+   </p>
+   
+   <section id="id_section">
+        <h2>아이디선택자</h2>
+   </section>
+
+   <section class="class_section">
+        <h2>클래스선택자</h2>
+   </section>
+
+   <ul class="web_level">
+    <li>
+        <a href="#">
+            웹1
+        </a>
+    </li>
+    <li>웹2</li>
+    <li>웹3</li>
+   </ul>
+
+   <ul class="web_class_name">
+    <li>
+        <a href="#">
+            웹1
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            웹2
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            웹3
+        </a>
+    </li>
+   </ul>
+
+   <ul>
+    <li cla>html</li>
+    <li>css</li>
+    <li class="front_end_leg">javascript</li>
+    <li>react</li>
+    <li>vue</li>
+   </ul>
+
+   <ul>
+    <li class="fast_food">햄버거</li>
+    <li>감자튀김</li>
+    <li>콜라</li>
+    <li>사이다</li>
+    <li>환타</li>
+   </ul>
+
+   <div>
+    <p class="p_tag">p태그입니다.</p>
+    <h3>h3태그입니다.</h3>
+    <span id="span_id">span태그입니다.</span>
+   </div>
+</body>
+</html>
