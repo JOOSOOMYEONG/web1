@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트</title>
+    <style>
+        h1 {
+            color: antiquewhite;
+        }
+
+        .font_px {
+            font-size: 40px;
+        }
+
+        .font_em {
+            font-size: 2em;
+        }
+        /* em : 부모요소의 폰트 크기를 기준으로 상대적인 크기를 지정 */
+        /* 예를 들어 부모요소가 16px일 때 자식요소에게 1em을 지정하면 그대로 16px이고, 2em일 때 32px이 된다. */
+        /* 부모 요소의 크기가 달라질 떄마다 em이 적용된 폰트도 크기가 달라진다. */
+
+        .font_rem {
+            font-size: 3rem;
+        }
+        /* rem : 부모요소가 아닌 최상위루트 요소인 html의 폰트 크기를 기준으로 상대적 크기를 설정. */
+
+        .font_weight {
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <h1>폰트 스타일</h1>
+
+    <p class="font_px">PX 사이즈</p>
+
+    <p class="font_em">EM 사이즈</p>
+
+    <p class="font_rem">rem 사이즈</p>
+
+    <p class="font_weight">폰트굵기</p>
+</body>
+</html>

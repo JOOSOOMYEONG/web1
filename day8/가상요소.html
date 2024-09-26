@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소</title>
+    <style>
+        .box > p::before {
+            content: '오늘은 목요일';
+            color: rgb(43, 170, 209);
+        }
+        /* 콜론(::)을 입력하면 가상요소 선택이 가능하고 띄어쓰기를 하면 안 됨. */
+        /* 콘텐츠 작성은 따옴표('')를 통해 입력.' */
+
+        .box > p::after {
+            content: '내일은 금요일';
+            color: aqua;
+        }
+
+        .box::before {
+            width: 400px;
+            height: 400px;
+            background-color: goldenrod;
+            border-radius: 50%;
+            display: block;
+            content: '';
+        }
+
+        .box::after {
+            width: 550px;
+            height: 50px;
+            content: '';
+            background-color: black;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>내일은 즐거운 휴일입니다</p>
+    </div>
+</body>
+</html>
