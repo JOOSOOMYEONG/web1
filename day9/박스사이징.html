@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스사이징</title>
+    <style>
+        .box_size {
+            width: 300px;
+            border: 30px solid salmon;
+            background-color: bisque;
+            padding: 30px;
+            margin: 40px;
+        }
+
+        .box_size2 {
+            width: 300px;
+            border: 30px solid salmon;
+            background-color: bisque;
+            padding: 30px;
+            margin: 40px;
+            box-sizing: border-box;
+            /* 내가 정한 값의 남은 값을 정해주는 요소 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box_size">박스박스박스</div>
+    <div class="box_size2">박스박스박스</div>
+</body>
+
+</html>

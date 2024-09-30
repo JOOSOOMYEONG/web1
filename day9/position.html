@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body {
+            height: 10000px;
+        }
+
+        .container {
+            width: 700px;
+            border: 1px solid #000;
+            height: 500px;
+            margin-top: 50px;
+            position: relative;
+            /* relativesms 기준 요소로 container가 기준이 됨 */
+        }
+
+        .box {
+            position: absolute;
+            /* absolute로 자식 요소에게 부모요소가 자신의 기준이라는 걸 알리게 함 */
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .b1 {
+            background-color: aliceblue;
+            top: 0;
+            left: 0;
+            /* 위치값을 정해줘야 스티커처럼 사용 가능 */
+            z-index: -1;
+        }
+
+        .b2 {
+            background-color: blanchedalmond;
+            bottom: 50%;
+            left: 50%;
+            /* transform: translatex(-50%);
+            transform: translatey(-50%); */
+            transform: translate(-50%, 50%);
+            /* 요소의 중심점을 중간으로 위치 시켜주는 것 */
+            /* transform의 translate는 x,y 중에 하나만 사용 가능 */
+            /* translatex() + translatey() XX */
+            /* translate(x,y) OO */
+        }
+
+        .b3 {
+            background-color: forestgreen;
+            bottom: 0;
+            right: 0;
+        }
+
+        p {
+            z-index: 1;
+            /* 배경으로 깔렸으면 하는 요소를 순서를 바꿔 깔아주는 기능 */
+        }
+
+        .top_btn {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            color: green;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 50px;
+        }
+
+        a {
+            display: block;
+            width: 100px;
+            height: 100px;
+            /* a태그의 영역을 display block으로 버튼만큼의 영억을 잡아서 버튼 자체를 눌렀을 떄 영역으로 이동되게 해야 한다. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="dd">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatem adipisci eligendi ea assumenda
+            praesentium optio fuga nihil, a dignissimos aperiam nesciunt harum error earum, numquam commodi doloribus,
+            sunt quos.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, reiciendis ratione deleniti sequi
+            explicabo eveniet autem doloribus pariatur debitis, accusamus enim obcaecati aperiam excepturi aut. Eligendi
+            laboriosam sed in nesciunt?
+        </p>
+        <div class="box b1">왼쪽 위</div>
+        <div class="box b2">중간</div>
+        <div class="box b3">오른쪽 아래</div>
+    </div>
+
+    <div class="top_btn">
+        <a href="#dd">
+            top
+        </a>
+    </div>
+</body>
+
+</html>
