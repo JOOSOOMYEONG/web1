@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+</head>
+<style>
+    .z-index {
+        /* z-index는 position이 있어야 움직이기 때문에 무조건 넣어야 함 */
+        position: relative;
+        border: 1px solid salmon;
+        height: 500px;
+    }
+
+    .z-index > div {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    .box1 {
+        background-color: aquamarine;
+        z-index: 3;
+        /* 높은 숫자일 수록 안 가려짐 */
+    }
+
+    .box2 {
+        background-color: lavender;
+        top: 25px;
+        left: 25px;
+        z-index: 2;
+    }
+
+    .box3 {
+        background-color: sandybrown;
+        top: 50px;
+        left: 50px;
+    }
+</style>
+<body>
+    <div class="z-index">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position2</title>
+</head>
+<style>
+    
+    body {
+        height: 10000px;
+    }
+    /* 섹션 값을 안 넣었을 때 정해진 값까지만 따라오고 사라진다*/
+    .sticky_box {
+        width: 100%;
+        height: 100px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: lemonchiffon;
+    }
+    /* .sticky_section {
+        height: 10000px;
+    } */
+    /* 어느정도 이 영역을 지나치게 되면 따라온다 */
+</style>
+<body>
+    <section class="sticky_section">
+        <div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda esse voluptatum dolorem voluptates numquam beatae labore fugiat autem hic, eum animi error quam sint saepe quas sit necessitatibus neque! Iste!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda esse voluptatum dolorem voluptates numquam beatae labore fugiat autem hic, eum animi error quam sint saepe quas sit necessitatibus neque! Iste!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda esse voluptatum dolorem voluptates numquam beatae labore fugiat autem hic, eum animi error quam sint saepe quas sit necessitatibus neque! Iste!
+            </p>
+        </div>
+        <div class="sticky_box"></div>
+        <div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda esse voluptatum dolorem voluptates numquam beatae labore fugiat autem hic, eum animi error quam sint saepe quas sit necessitatibus neque! Iste!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda esse voluptatum dolorem voluptates numquam beatae labore fugiat autem hic, eum animi error quam sint saepe quas sit necessitatibus neque! Iste!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda esse voluptatum dolorem voluptates numquam beatae labore fugiat autem hic, eum animi error quam sint saepe quas sit necessitatibus neque! Iste!
+            </p>
+        </div>
+    </section>
+</body>
+</html>
