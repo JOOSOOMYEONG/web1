@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex2</title>
+</head>
+<style>
+    .flex_container {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        /* 콘텐츠의 모양이 변하지 않는 반응형이 된다 */
+    }
+
+    .flex_container > div {
+        width: 300px;
+        height: 300px;
+    }
+
+    .item1 {
+        background-color: aliceblue;
+    }
+    .item2 {
+        background-color: lavender;
+    }
+    .item3 {
+        background-color: lavenderblush;
+    }
+    .item4 {
+        background-color: lightblue;
+    }
+    .item5 {
+        background-color: tan;
+    }
+    .item6 {
+        background-color: orchid;
+    }
+    .item7 {
+        background-color: palegreen;
+    }
+</style>
+<body>
+    <div class="flex_container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+    </div>
+</body>
+</html>

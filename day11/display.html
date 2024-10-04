@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+</head>
+<style>
+    .none {
+        display: none;
+        /* 화면에서 없어지게 됨 */
+    }
+    
+    .block_1 {
+        display: block;
+        /* 블록처럼 보이게 하는 속성 */
+    }
+    .block_2 {
+        display: block;
+        width: 500px;
+        height: 300px;
+        /* display: block은 원하는 영역 값을 부여하면 그대로 흡수하는 속성 */
+    }
+
+    .inline_1 {
+        display: inline;
+    }
+
+    .inline_2 {
+        width: 500px;
+        height: 300px;
+        /* 인라인 태그는 크기를 부여해도 변경이 안 됨*/
+    }
+    
+    .inline_block_1 {
+        display: inline-block;
+    }
+    
+    .inline_block_2 {
+        display: inline-block;
+        width: 500px;
+        height: 200px;
+        /* 인라인과 블록을 모두 가지는 inline-block 속성을 부여함으로 크기를 부여하면 변경이 됨*/
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="none">none</div>
+        <span class="block_1">inline 속성의 태그에 block을 부여하면?</span>
+        <span class="block_2">inline 속성의 태그에 block을 부여하고 width/height 값을 부여함</span>
+
+        <div class="inline_1">block 속성 택그에 inline 속성을 부여하면?</div>
+        <span class="inline_2">inline 태그에 크기를 지정해볼까?</span>
+
+        <div class="inline_block_1">인라인 블록이란</div>
+        <span class="inline_block_2">인라인 태그에 inline-block 속성을 부여한 후 크기를 조절하면?</span>
+    </div>
+</body>
+</html>
