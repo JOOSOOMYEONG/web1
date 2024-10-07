@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify_content</title>
+    <!-- 아이템 콘텐츠 사이의 간격을 조정 -->
+    <!-- 가로 배치가 기본 -->
+</head>
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: beige;
+        margin: 10px;
+    }
+
+    article {
+        border: 1px solid #000;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .start {
+        justify-content: flex-start;
+        /* 부모 요소의 시작점부터 정렬 */
+    }
+
+    .end {
+        justify-content: flex-end;
+        /* 부모 요소 끝 쪽에 요소가 위치 */
+    }
+
+    .center {
+        justify-content: center
+        /* 중앙 배치 */
+    }
+
+    .between {
+        justify-content: space-between;
+        /* 부모 요소의 기준으로 요소 사이의 간격(여백)을 나눠서 가짐. */
+    }
+
+    .around {
+        justify-content: space-around;
+        /* 요소를 3개로 나눴을 때 하나의 요소 주변의 여백이 같아진다. */
+        /* 하나의 요소가 양쪽 간격(여백)을 다 가지고 있는 것. */
+    }
+
+    .evenly {
+        justify-content: space-evenly;
+        /* 부모 요소의 기준으로 모든 요소의 간격(여백)이 같아짐. */
+    }
+</style>
+<body>
+    <section class="justify_content">
+        <article class="start">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="end">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="center">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="between">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="around">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="evenly">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+    </section>
+</body>
+</html>
