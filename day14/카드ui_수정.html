@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카드ui_수정</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 400px;
+            background: url(./card_ui_img.webp);
+            background-size: cover;
+            margin: 50px;
+            border: none;
+            border-radius: 20px;
+            position: relative;
+            /* text_area를 기준으로 만들기 위함 */
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 40px;
+            margin: 0;
+        }
+
+        .btn {
+            width: 100px;
+            height: 50px;
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 30px;
+        }
+
+        .text_area {
+            position: absolute;
+            /* text_area를 기준으로 만들기 위함 */
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 350px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <article class="container">
+        <!-- 하나를 또 떼서 쓸 수 있도록 하기 위함 -->
+        <figure class="img_box"></figure>
+        <!-- 사진 고정을 위해 쓰는 건데 이 풀이에서 어떤 식으로 쓰이는지 모르겠다 -->
+        <div class="text_area">
+            <h2>후쿠오카</h2>
+            <div class="btn">
+                <a href="#">둘러보기</a>
+            </div>
+        </div>
+    </article>
+</body>
+</html>
